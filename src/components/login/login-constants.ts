@@ -1,0 +1,5 @@
+export const LOGIN = {
+    PENDING: 'PENDING',
+    FULLFILLED: 'FULLFILLED',
+    REJECTED: 'REJECTED'
+}
