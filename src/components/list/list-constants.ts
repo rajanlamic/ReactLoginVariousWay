@@ -1,0 +1,5 @@
+export const LIST = {
+    PENDING: 'LIST_PENDING',
+    FULFILLED: 'LIST_FULFILLED',
+    REJECTED: 'LIST_REJECTED',
+}

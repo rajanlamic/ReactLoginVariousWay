@@ -31,4 +31,4 @@ const LoginReduxSagaHooksRefs = () => {
     </form>
 }
 
-export default LoginReduxSagaHooksRefs
+export default React.memo(LoginReduxSagaHooksRefs)

@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`List componnet should render Lists properly with snapshot 1`] = `ShallowWrapper {}`;

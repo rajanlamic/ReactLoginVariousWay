@@ -1,4 +1,5 @@
 import { LOGIN } from "./login-constants"
+import { createAction } from "redux-actions"
 
 const login = (payload: any) => {
     return {
@@ -14,6 +15,9 @@ const userNameAction = (payload: any) => {
     }
 }
 
+const userNameActionCreateAction = createAction<string>("USERNAME")
+const passwordActionCreateAction = createAction<string>("PASSWORD")
+
 const passwordAction = (payload: any) => {
     return {
         type: 'PASSWORD',
@@ -28,4 +32,4 @@ const makeLogin = (payload: any) => {
     }
 }
 
-export { login, userNameAction, passwordAction, makeLogin }
+export { login, userNameAction, passwordAction, makeLogin, userNameActionCreateAction, passwordActionCreateAction }

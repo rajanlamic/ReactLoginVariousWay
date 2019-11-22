@@ -1,6 +1,6 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { login, userNameAction, passwordAction, makeLogin } from './login-action'
+import { login, userNameAction, passwordAction, makeLogin, userNameActionCreateAction, passwordActionCreateAction } from './login-action'
 import { selectLogin } from './login-selector'
 import { LOGIN } from './login-constants'
 import { logIn } from './login-service'
@@ -11,11 +11,11 @@ const LoginReduxSagaHooks = () => {
     const dispatch = useDispatch()
 
     const setUserNameHandler = (event: React.ChangeEvent<HTMLInputElement>) => {
-        dispatch(userNameAction(event.target.value))
+        dispatch(userNameActionCreateAction(event.target.value))
     }
 
     const setPasswordHandler = (event: React.ChangeEvent<HTMLInputElement>) => {
-        dispatch(passwordAction(event.target.value))
+        dispatch(passwordActionCreateAction(event.target.value))
     }
 
     const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
